@@ -1,0 +1,13 @@
+﻿<Window x:Class="PWGeneratorWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PWGeneratorWPF"
+        mc:Ignorable="d"
+        Title="パスワード生成" SizeToContent = "WidthAndHeight" PreviewKeyDown="Window_PreviewKeyDown" Icon="icon.ico">
+    <Grid Width="430" Height="50">
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="300" IsReadOnly="True" TextAlignment="Center" VerticalContentAlignment="Center" FontFamily="Consolas" FontSize="18" />
+        <Button x:Name="button1" Content="生成してコピー(F5)" HorizontalAlignment="Left" Margin="320,10,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click"/>
+    </Grid>
+</Window>
